@@ -72,6 +72,6 @@ public class Pape {
 
     @Override
     public String toString() {
-        return this.rang + " " + (this.saint ? "St " : " ") + this.nom + " " + this.numero;
+        return this.rang + " – " + (this.saint ? "St " : "") + this.nom + (this.numero.length() > 0 ? " " + this.numero : "");
     }
 }

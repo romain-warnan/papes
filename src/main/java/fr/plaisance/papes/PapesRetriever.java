@@ -39,8 +39,9 @@ public class PapesRetriever {
         String ordre = element.child(4 * (colonne - 1)).text();
         String election = element.child(4 * (colonne - 1) + 1).text();
         String nom = element.child(4 * (colonne - 1) + 2).text();
+        nom = nom.replace("1er", "I");
         String nationalite = element.child(4 * (colonne - 1) + 3).text();
-        return String.format("%s;%s;%s;%s;", ordre, election, nom, nationalite);
+        return String.format("%s;%s;%s;%s", ordre, election, nom, nationalite);
     }
 
 }
