@@ -32,7 +32,7 @@ public class PapesRetriever {
         List<String> filteredLines = lines.stream()
                 .filter(line -> !line.startsWith("N°") && !line.startsWith("?"))
                 .collect(Collectors.toList());
-        Files.write(Paths.get("papes.csv"), filteredLines, Charset.forName("UTF-8"));
+        Files.write(Paths.get("papes.raw.csv"), filteredLines, Charset.forName("UTF-8"));
     }
 
     private String line(Element element, int colonne) {
