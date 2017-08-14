@@ -35,6 +35,6 @@ public class PapesApplicationTests {
 
 	@Test
 	public void papesParNationalite() {
-		Assert.assertEquals(101L, service.papesParNationalite(papes).get("Romain").longValue());
+		Assert.assertEquals(101, service.papesParNationalite(papes).get("Romain").longValue());
 	}
 }
