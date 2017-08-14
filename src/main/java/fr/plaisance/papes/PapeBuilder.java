@@ -7,7 +7,7 @@ public class PapeBuilder {
 
     private static final String SAINT = "St ";
 
-    public Pape build(String line) {
+    public Pape buildOne(String line) {
         String[] tokens = line.split(";");
         Integer rang = Integer.valueOf(tokens[0]);
         Integer election = Integer.valueOf(tokens[1]);
