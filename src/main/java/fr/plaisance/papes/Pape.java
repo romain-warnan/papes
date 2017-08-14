@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Pape {
 
-    private Integer rang, election;
+    private Integer rang, election, fin;
     private String nom, numero, nationalite;
     private Boolean saint;
 
@@ -54,6 +54,14 @@ public class Pape {
 
     public void setSaint(Boolean saint) {
         this.saint = saint;
+    }
+
+    public Integer getFin() {
+        return fin;
+    }
+
+    public void setFin(Integer fin) {
+        this.fin = fin;
     }
 
     @Override
