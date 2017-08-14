@@ -39,7 +39,7 @@ public class PapeBuilder {
     }
 
     private Boolean saint(String[] tokens) {
-        return  tokens[2].startsWith(SAINT);
+        return tokens[2].startsWith(SAINT);
     }
 
     private String numero(String[] tokens) {
