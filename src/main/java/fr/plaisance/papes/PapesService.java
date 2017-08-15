@@ -2,12 +2,10 @@ package fr.plaisance.papes;
 
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class PapesService {
@@ -25,5 +23,12 @@ public class PapesService {
         return papes.stream()
                 .sorted(Comparator.comparingInt(Papes::dureeRegne).reversed())
                 .collect(Collectors.toMap(Function.identity(), Papes::dureeRegne, (a, b) -> a, LinkedHashMap::new));
+    }
+
+    public Map<Succession, Integer> vacancesDuTrone(List<Pape> papes) {
+        return IntStream.range(1, papes.size())
+                .mapToObj(n -> new Succession(papes.get(n - 1), papes.get(n)))
+                .sorted(Comparator.comparingInt(Papes::dureeVacanceTrone).reversed())
+                .collect(Collectors.toMap(Function.identity(), Papes::dureeVacanceTrone, (a, b) -> a, LinkedHashMap::new));
     }
 }

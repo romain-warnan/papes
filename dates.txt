@@ -1,0 +1,257 @@
+18	21 juillet 230 – 28 septembre 235
+19	21 novembre 235 – 3 janvier 236
+20	10 janvier 236 – 20 janvier 250
+21	6 mars ou 13 mars 251– juin 253
+22	25 juin 253 – 5 mars 254
+23	12 mai 254 – 2 août 257
+24	30 août 257 – 6 août 258
+25	22 juillet 260 – 26 décembre 268
+26	5 janvier 269 – 30 décembre 274
+27	4 janvier 275 – 7 décembre 283
+28	17 décembre 283 – 22 avril 296
+29	30 juin 296 – 25 octobre 304
+30	27 mai 308 – 16 janvier 309
+31	18 avril 309 – 17 août 309
+32	2 juillet 311 – 10 janvier314
+33	31 janvier 314 – 31 décembre 335
+34	18 janvier 336 – 7 octobre336
+35	6 février 337 – 12 avril 352
+36	17 mai 352 – 24 septembre366
+37	1er octobre 366 – 11 décembre 384
+38	11 décembre 384 – 26 novembre 399
+39	27 novembre 399 – 19 décembre 401
+40	22 décembre 401 – 12 mars 417
+41	18 mars 417 – 26 décembre 418
+42	28 décembre 418 – 4 septembre 422
+43	10 septembre 422 – 27 juillet 432
+44	31 juillet 432 – 19 août 440
+45	29 septembre 440 – 10 novembre 461
+46	19 novembre 461 – 29 février 468
+47	3 mars 468 – 10 mars 483
+48	13 mars 483 – 1er mars 492
+49	1er mars 492 – 21 novembre 496
+50	24 novembre 496 – 19 novembre 498
+51	22 novembre 498 – 19 juillet 514
+52	20 juillet 514 – 6 août 523
+53	13 août 523 – 18 mai 526
+54	12 juillet 526 – 22 septembre 530
+55	22 septembre 530 – 17 octobre 532
+56	2 janvier 533 – 8 mai 535
+57	13 mai 535 – 22 avril 536
+58	8 juin 536 – 11 mars 537
+59	29 mars 537 – 7 juin 555
+60	16 avril 556 – 4 mars 561
+61	17 juillet 561 – 13 juillet 574
+62	2 juin 575 – 30 juillet 579
+63	26 novembre 579 – 7 février 590
+64	3 septembre 590 – 12 mars604
+65	13 septembre 604 – 22 février 606
+66	19 février 607 – 12 novembre 607
+67	15 septembre 608 – 8 mai615
+68	19 octobre 615 – 8 novembre 618
+69	23 décembre 619 – 25 octobre 625
+70	27 octobre 625 – 12 octobre 638
+71	28 mai 640 – 2 août 640
+72	24 décembre 640 – 12 octobre 642
+73	24 novembre 642 – 14 mai649
+74	5 juillet 649 – 17 juin 653
+75	10 août 654 – 2 juin 657
+76	30 juillet 657 – 27 janvier672
+77	11 avril 672 – 17 juin 676
+78	2 novembre 676 – 11 avril678
+79	27 juin 678 – 10 janvier 681
+80	17 août 682 – 3 juillet 683
+81	26 juin 684 – 8 mai 685
+82	23 juillet 685 – 2 août 686
+83	21 octobre 686 – 21 septembre 687
+84	15 décembre 687 – 8 septembre 701
+85	30 octobre 701 – 11 janvier705
+86	1er mars 705 – 18 octobre707
+87	15 janvier 708 – 4 février708
+88	25 mars 708 – 9 avril 715
+89	19 mai 715 – 11 février 731
+90	18 mars 731 – 28 novembre 741
+91	10 décembre 741 – 22 mars 752
+92	26 mars 752 – 26 avril 757
+93	29 mai 757 – 28 juin 767
+94	1er août 767 – 24 janvier772
+95	1er février 772 – 25 décembre 795
+96	26 décembre 795 – 12 juin816
+97	12 juin 816 – 24 janvier 817
+98	25 janvier 817 – 11 février824
+99	6 juin 824 – 27 août 827
+100	1er septembre 827 – 10 octobre 827
+101	20 décembre 827 – 25 janvier 844
+102	janvier 844 – 27 janvier 847
+103	10 avril 847 – 17 juillet 855
+104	29 septembre 855 – 17 avril858
+105	24 avril 858 – 13 novembre867
+106	14 décembre 867 – 14 décembre 872
+107	14 décembre 872 – 16 décembre 882
+108	16 décembre 882 – 15 mai884
+109	17 mai 884 – septembre 885
+110	septembre 885 – 14 septembre 891
+111	19 septembre 891 – 4 avril 896
+112	11 avril 896 – 26 avril 896
+113	mai 896 – août 897
+114	août 897 – novembre 897
+115	décembre 897
+116	janvier 898 – 26 mars 900
+117	mai 900 – août 903
+118	juillet 903 – septembre 903
+119	29 janvier 904 – 14 avril911
+120	avril 911 – juin 913
+121	7 juillet 913 – 5 février 914
+122	mars 914 – mai 928
+123	mai 928 – décembre 928
+124	3 février 929 – 15 mars 931
+125	20 mars 931 – janvier 936
+126	3 janvier 936 – 13 juillet 939
+127	14 juillet 939 – octobre 942
+128	30 octobre 942 – mai 946
+129	10 mai 946 – 8 novembre 955
+130	16 décembre 955 – 14 mai 964
+131	4 décembre 963 – 1er mars 965
+132	22 mai 964 – déposé le 23 juin 964
+133	1er octobre 965 – 6 septembre 972
+134	19 janvier 973 – juin 974
+135	octobre 974 – 10 juillet 983
+136	décembre 983 – 20 août984
+137	6 août 985 – 1er avril 996
+138	3 mai 996 – 18 février 999
+139	2 avril 999 – 12 mai 1003
+140	16 mai 1003 – 6 novembre 1003
+141	25 décembre 1003 – juin 1009
+142	31 juillet 1009 – 12 mai 1012
+143	21 mai 1012 – 9 avril 1024
+144	19 avril 1024 – 20 octobre 1032
+145	22 octobre 1032 – chassé en septembre 1044
+146	20 janvier 1045 – chassé le 10 mars 1045
+147	10 mars 1045 – renonce le1er mai 1045
+148	1er mai 1045 – déposé le20 décembre 1046
+149	24 décembre 1046 – 9 octobre 1047
+150	8 novembre 1047 – chassé le 16 juillet 1048
+151	17 juillet 1048 – 9 août 1048
+152	12 février 1049 – 19 avril 1054
+153	13 avril 1055 – 28 juillet 1057
+154	2 août 1057 – 29 mars 1058
+155	6 décembre 1058 – 19 juillet 1061
+156	30 septembre 1061 – 21 avril 1073
+157	30 juin 1073 – 25 mai 1085
+158	24 mai 1086 – 16 septembre 1087
+159	12 mars 1088 – 29 juillet 1099
+160	14 août 1099 – 21 janvier 1118
+161	10 mars 1118 – 29 janvier 1119
+162	2 février 1119 – 13 décembre 1124
+163	21 décembre 1124 – 13 février 1130
+164	23 février 1130 – 24 septembre 1143
+165	26 septembre 1143 – 8 mars 1144
+166	12 mars 1144 – 15 février 1145
+167	18 février 1145 – 8 juillet 1153
+168	12 juillet 1153 – 3 décembre 1154
+169	4 décembre 1154 – 1er septembre 1159
+170	20 septembre 1159 – 30 août 1181
+171	1er septembre 1181 – 25 novembre 1185
+172	25 novembre 1185 – 20 octobre 1187
+173	21 octobre 1187 – 17 décembre 1187
+174	19 décembre 1187 – 27 mars 1191
+175	30 mars 1191 – 8 janvier 1198
+176	8 janvier 1198 – 16 juillet 1216
+177	18 juillet 1216 – 18 mars 1227
+178	19 mars 1227 – 22 août 1241
+179	25 octobre 1241 – 10 novembre 1241
+180	25 juin 1243 – 7 décembre 1254
+181	12 décembre 1254– 25 mai 1261
+182	29 août 1261 – 2 octobre 1264
+183	5 février 1265 – 29 novembre 1268
+184	1er septembre1271 – 10 janvier 1276
+185	21 janvier 1276 – 22 juin 1276
+186	11 juillet 1276 – 18 août 1276
+187	8 septembre 1276– 20 mai 1277
+188	25 novembre 1277– 22 août 1280
+189	22 février 1281 – 28 mars 1285
+190	2 avril 1285 – 3 avril 1287
+191	22 février 1288 – 4 avril 1292
+192	5 juillet 1294 – renonce le13 décembre 1294
+193	24 décembre 1294– 11 octobre 1303
+194	22 octobre 1303 – 7 juillet 1304
+195	5 juin 1305 – 20 avril 1314
+196	7 août 1316 – 4 décembre 1334
+197	20 décembre 1334 – 25 avril 1342
+198	7 mai 1342 – 6 décembre 1352
+199	18 décembre 1352 – 12 septembre 1362
+200	28 septembre 1362 – 19 décembre 1370
+201	30 décembre 1370 – 27 mars 1378
+202	8 avril 1378 – 15 octobre 1389
+203	2 novembre 1389 – 1er octobre 1404
+204	17 octobre 1404 – 6 novembre 1406
+205	30 novembre 1406 – renonce le 4 juillet 1415
+206	11 novembre 1417 – 20 février 1431
+207	3 mars 1431 – 23 février 1447
+208	6 mars 1447 – 24 mars 1455
+209	8 avril 1455 – 6 août 1458
+210	19 août 1458 – 15 août 1464
+211	30 août 1464 – 26 juillet 1471
+212	9 août 1471 – 12 août 1484
+213	29 août 1484 – 25 juillet 1492
+214	11 août 1492 – 18 août 1503
+215	22 septembre 1503– 18 octobre 1503
+216	1er novembre 1503– 21 février 1513
+217	9 mars 1513 – 1er décembre 1521
+218	9 janvier 1522 – 14 septembre 1523
+219	19 novembre 1523– 25 septembre 1534
+220	13 octobre 1534 – 10 novembre 1549
+221	7 février 1550 – 23 mars 1555
+222	9 avril 1555 – 30 avril 1555
+223	23 mai 1555 – 18 août 1559
+224	25 décembre 1559 – 9 décembre 1565
+225	7 janvier 1566 – 1er mai 1572
+226	13 mai 1572 – 10 avril 1585
+227	24 avril 1585 – 27 août 1590
+228	15 septembre 1590– 27 septembre 1590
+229	5 décembre 1590 – 16 octobre 1591
+230	29 octobre 1591 – 30 décembre 1591
+231	30 janvier 1592 – 3 mars 1605
+232	1er avril 1605 – 27 avril 1605
+233	16 mai 1605 – 28 janvier 1621
+234	9 février 1621 – 8 juillet 1623
+235	6 août 1623 – 29 juillet 1644
+236	15 septembre 1644– 7 janvier 1655
+237	7 avril 1655 – 22 mai 1667
+238	20 juin 1667 – 9 décembre 1669
+239	29 avril 1670 – 22 juillet 1676
+240	21 septembre 1676– 12 août 1689
+241	6 octobre 1689 – 1er février 1691
+242	12 juillet 1691 – 27 septembre 1700
+243	23 novembre 1700– 19 mars 1721
+244	8 mai 1721 – 7 mars 1724
+245	29 mai 1724 – 21 février 1730
+246	12 juillet 1730 – 6 février 1740
+247	17 août 1740 – 3 mai 1758
+248	6 juillet 1758 – 2 février 1769
+249	19 mai 1769 – 22 septembre 1774
+250	15 février 1775 – 29 août 1799
+251	14 mars 1800 – 20 août 1823
+252	28 septembre 1823– 10 février 1829
+253	31 mars 1829 – 30 novembre 1830
+254	2 février 1831 – 1er juin 1846
+255	16 juin 1846 – 7 février 1878
+256	20 février 1878 – 20 juillet 1903
+257	4 août 1903 – 20 août 1914
+258	3 septembre 1914 – 22 janvier 1922
+259	6 février 1922 – 10 février 1939
+260	2 mars 1939 – 9 octobre 1958
+261	28 octobre 1958 – 3 juin 1963
+262	21 juin 1963 – 6 août 1978
+263	26 août 1978 – 28 septembre 1978
+264	16 octobre 1978 – 2 avril 2005
+265	19 avril 2005 – renonce le28 février 2013
+266	13 mars 2013
+
+
+
+
+
+
+
+

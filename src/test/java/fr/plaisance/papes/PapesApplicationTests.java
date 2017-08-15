@@ -42,4 +42,10 @@ public class PapesApplicationTests {
 	public void papesParDureeDeRegne() {
 		Assert.assertEquals(266, service.papesParDureeDeRegne(papes).entrySet().size());
 	}
+
+	@Test
+	public void vacancesDuTrone() {
+		//Assert.assertEquals(266, service.vacancesDuTrone(papes).entrySet().size());
+		service.vacancesDuTrone(papes).forEach((k, v) -> System.out.println(k));
+	}
 }
