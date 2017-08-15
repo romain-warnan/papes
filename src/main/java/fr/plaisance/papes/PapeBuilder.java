@@ -16,7 +16,7 @@ public class PapeBuilder {
         Pape pape = new Pape();
         pape.setRang(rang(tokens));
         pape.setElection(election(tokens));
-        pape.setElection(fin(tokens));
+        pape.setFin(fin(tokens));
         pape.setNom(nom(tokens));
         pape.setNationalite(nationalite(tokens));
         pape.setSaint(saint(tokens));
@@ -41,7 +41,7 @@ public class PapeBuilder {
     }
 
     private static String numero(String[] tokens) {
-        String nomComplet = tokens[3];
+        String nomComplet = tokens[3].replace(SAINT, "");
         int index = nomComplet.lastIndexOf(" ");
         return index > 0 ? nomComplet.substring(index + 1, nomComplet.length()) : "";
     }
