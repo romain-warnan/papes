@@ -17,7 +17,7 @@ public class PapesLoader {
     private PapeBuilder builder;
 
     public List<Pape> loadAll() throws IOException {
-        return Files.readAllLines(Paths.get("papes.csv"), Charset.forName("UTF-8"))
+        return Files.readAllLines(Paths.get("papes.txt"), Charset.forName("UTF-8"))
                 .stream()
                 .map(builder::buildOne)
                 .collect(Collectors.toList());

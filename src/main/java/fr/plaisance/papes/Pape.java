@@ -1,10 +1,12 @@
 package fr.plaisance.papes;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Pape {
 
-    private Integer rang, election, fin;
+    private Integer rang;
+    private LocalDate election, fin;
     private String nom, numero, nationalite;
     private Boolean saint;
 
@@ -14,14 +16,6 @@ public class Pape {
 
     public void setRang(Integer rang) {
         this.rang = rang;
-    }
-
-    public Integer getElection() {
-        return election;
-    }
-
-    public void setElection(Integer election) {
-        this.election = election;
     }
 
     public String getNom() {
@@ -56,11 +50,19 @@ public class Pape {
         this.saint = saint;
     }
 
-    public Integer getFin() {
+    public LocalDate getElection() {
+        return election;
+    }
+
+    public void setElection(LocalDate election) {
+        this.election = election;
+    }
+
+    public LocalDate getFin() {
         return fin;
     }
 
-    public void setFin(Integer fin) {
+    public void setFin(LocalDate fin) {
         this.fin = fin;
     }
 

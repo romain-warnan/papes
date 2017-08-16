@@ -1,0 +1,266 @@
+1;St Pierre;Galiléen;33;64
+2;St Lin;Toscan;64;76
+3;St Anaclet;Romain;76;88
+4;St Clément I;Romain;88;97
+5;St Évariste;Grec;97;105
+6;Alexandre I;Romain;105;115
+7;St Sixte I;Romain;115;125
+8;Télesphore;Grec;125;136
+9;St Hygin;Grec;136;140
+10;St Pie I;Italien;140;155
+11;St Anicet;Syrien;155;166
+12;St Soter;Campanien;166;175
+13;St Eleuthère;Grec;175;189
+14;St Victor I;Africain;189;199
+15;St Zéphyrin;Romain;199;217
+16;St Calixte I;Romain;217;222
+17;St Urbain I;Romain;222;230
+18;St Pontien;Romain;21/07/230;28/09/235
+19;St Anthère;Grec;21/11/235;03/01/236
+20;St Fabien;Romain;10/01/236;20/01/250
+21;St Corneille;Romain;13/03/251;06/253
+22;St Lucius I;Romain;25/06/253;05/03/254
+23;St Etienne I;Romain;12/05/254;02/08/257
+24;St Sixte II;Grec;30/08/257;06/08/258
+25;St Denys;Inconnue;22/07/260;26/12/268
+26;St Félix I;Romain;05/01/269;30/12/274
+27;St Eutychien;Toscan;04/01/275;07/12/283
+28;St Caïus;Dalmate;17/12/283;22/04/296
+29;St Marcellin;Romain;30/06/296;25/10/304
+30;St Marcel I;Romain;27/05/308;16/01/309
+31;St Eusèbe;Grec;18/04/309;17/08/309
+32;St Miltiade;Africain;02/07/311;10/01/314
+33;St Sylvestre I;Romain;31/01/314;31/12/335
+34;St Marc;Romain;18/01/336;07/10/336
+35;St Jules I;Romain;06/02/337;12/04/352
+36;Libère;Romain;17/05/352;24/09/366
+37;St Damase I;Espagnol;01/10/366;11/12/384
+38;St Sirice;Romain;11/12/384;26/11/399
+39;St Anastase I;Romain;27/11/399;19/12/401
+40;St Innocent I;Latium;22/12/401;12/03/417
+41;St Zosime;Grec;18/03/417;26/12/418
+42;St Boniface I;Romain;28/12/418;04/09/422
+43;St Célestin I;Campanien;10/09/422;27/07/432
+44;St Sixte III;Romain;31/07/432;19/08/440
+45;St Léon I;Toscan;29/09/440;10/11/461
+46;St Hilaire;Sarde;19/11/461;29/02/468
+47;St Simplice;Tivoli;03/03/468;10/03/483
+48;St Félix III;Romain;13/03/483;01/03/492
+49;St Gélase I;Africain;01/03/492;21/11/496
+50;Anastase II;Romain;24/11/496;19/11/498
+51;St Symmaque;Sarde;22/11/498;19/07/514
+52;St Hormisdas;Latium;20/07/514;06/08/523
+53;St Jean I;Toscan;13/08/523;18/05/526
+54;St Félix IV;Italien;12/07/526;22/09/530
+55;Boniface II;Romain;22/09/530;17/10/532
+56;Jean II;Romain;02/01/533;08/05/535
+57;St Agapet I;Romain;13/05/535;22/04/536
+58;St Silvère;Campanien;08/06/536;11/03/537
+59;Vigile;Romain;29/03/537;07/06/555
+60;Pélage I;Romain;16/04/556;04/03/561
+61;Jean III;Romain;17/07/561;13/07/574
+62;Benoît I;Romain;02/06/575;30/07/579
+63;Pélage II;Romain;26/11/579;07/02/590
+64;St Grégoire I;Romain;03/09/590;12/03/604
+65;Sabinien;Toscan;13/09/604;22/02/606
+66;Boniface III;Romain;19/02/607;12/11/607
+67;St Boniface IV;Italien;15/09/608;08/05/615
+68;Adéodat I;Romain;19/10/615;08/11/618
+69;Boniface V;Napolitain;23/12/619;25/10/625
+70;Honorius I;Campanien;27/10/625;12/10/638
+71;Séverin;Romain;28/05/640;02/08/640
+72;Jean IV;Dalmate;24/12/640;12/10/642
+73;Théodore I;Grec;24/11/642;14/05/649
+74;St Martin I;Italien;05/07/649;17/06/653
+75;St Eugène I;Romain;10/08/654;02/06/657
+76;St Vitalien;Italien;30/07/657;27/01/672
+77;Adéodat II;Romain;11/04/672;17/06/676
+78;Donus;Romain;02/11/676;11/04/678
+79;St Agathon;Sicilien;27/06/678;10/01/681
+80;St Léon II;Sicilien;17/08/682;03/07/683
+81;St Benoît II;Romain;26/06/684;08/05/685
+82;Jean V;Syrien;23/07/685;02/08/686
+83;Conon;Inconnue;21/10/686;21/09/687
+84;St Serge I;Syrien;15/12/687;08/09/701
+85;Jean VI;Grec;30/10/701;11/01/705
+86;Jean VII;Grec;01/03/705;18/10/707
+87;Sisinnius;Syrien;15/01/708;04/02/708
+88;Constantin;Syrien;25/03/708;09/04/715
+89;Grégoire II;Romain;19/05/715;11/02/731
+90;St Grégoire III;Syrien;18/03/731;28/11/741
+91;St Zacharie;Grec;10/12/741;22/03/752
+92;Etienne II;Romain;26/03/752;26/04/757
+93;St Paul I;Romain;29/05/757;28/06/767
+94;St Etienne III;Sicilien;01/08/767;24/01/772
+95;Adrien I;Romain;01/02/772;25/12/795
+96;St Léon III;Romain;26/12/795;12/06/816
+97;Etienne IV;Romain;12/06/816;24/01/817
+98;St Pascal I;Romain;25/01/817;11/02/824
+99;Eugène II;Romain;06/06/824;27/08/827
+100;Valentin;Romain;01/09/827;10/10/827
+101;Grégoire IV;Romain;20/12/827;25/01/844
+102;Serge II;Romain;01/844;27/01/847
+103;St Léon IV;Romain;10/04/847;17/07/855
+104;Benoît III;Romain;29/09/855;17/04/858
+105;St Nicolas I;Romain;24/04/858;13/11/867
+106;Adrien II;Romain;14/12/867;14/12/872
+107;Jean VIII;Romain;14/12/872;16/12/882
+108;Martin II;Latium;16/12/882;15/05/884
+109;St Adrien III;Romain;17/05/884;09/885
+110;Etienne V;Romain;09/885;14/09/891
+111;Formose;Latium;19/09/891;04/04/896
+112;Boniface VI;Romain;11/04/896;26/04/896
+113;Etienne VI;Romain;05/896;08/897
+114;Romain;Latium;08/897;11/897
+115;Théodore II;Romain;12/897;12/897
+116;Jean IX;Italien;01/898;26/03/900
+117;Benoît IV;Romain;05/900;08/903
+118;Léon V;Italien;07/903;09/903
+119;Serge III;Romain;29/01/904;14/04/911
+120;Anastase III;Romain;04/911;06/913
+121;Landon;Samnium;07/07/913;05/02/914
+122;Jean X;Italien;03/914;05/928
+123;Léon VI;Romain;05/928;12/928
+124;Etienne VII;Romain;03/02/929;15/03/931
+125;Jean XI;Romain;20/03/931;01/936
+126;Léon VII;Romain;03/01/936;13/07/939
+127;Etienne VIII;Romain;14/07/939;10/942
+128;Martin III;Romain;30/10/942;05/946
+129;Agapit II;Romain;10/05/946;08/11/955
+130;Jean XII;Romain;16/12/955;14/05/964
+131;Léon VIII;Romain;04/12/963;01/03/965
+132;Benoît V;Romain;22/05/964;23/06/964
+133;Jean XIII;Romain;01/10/965;06/09/972
+134;Benoît VI;Romain;19/01/973;06/974
+135;Benoît VII;Romain;10/974;10/07/983
+136;Jean XIV;Italien;12/983;20/08/984
+137;Jean XV;Romain;06/08/985;01/04/996
+138;Grégoire V;Saxon;03/05/996;18/02/999
+139;Sylvestre II;Français;02/04/999;12/05/1003
+140;Jean XVII;Romain;16/05/1003;06/11/1003
+141;Jean XVIII;Romain;25/12/1003;06/1009
+142;Serge IV;Romain;31/07/1009;12/05/1012
+143;Benoît VIII;Italien;21/05/1012;09/04/1024
+144;Jean XIX;Romain;19/04/1024;20/10/1032
+145;Benoît IX;Italien;22/10/1032;09/1044
+146;Sylvestre III;Romain;20/01/1045;10/03/1045
+147;Benoît IX;Italien;10/03/1045;01/05/1045
+148;Grégoire VI;Romain;01/05/1045;20/12/1046
+149;Clément II;Saxon;24/12/1046;09/10/1047
+150;Benoît IX;Italien;08/11/1047;16/07/1048
+151;Damase II;Bavarois;17/07/1048;09/08/1048
+152;St Léon IX;Alsacien;12/02/1049;19/04/1054
+153;Victor II;Allemand;13/04/1055;28/07/1057
+154;Etienne IX;Lorrain;02/08/1057;29/03/1058
+155;Nicolas II;Français;06/12/1058;19/07/1061
+156;Alexandre II;Italien;30/09/1061;21/04/1073
+157;Grégoire VII;Toscan;30/06/1073;25/05/1085
+158;Victor III;Italien;24/05/1086;16/09/1087
+159;Urbain II;Français;12/03/1088;29/07/1099
+160;Pascal II;Italien;14/08/1099;21/01/1118
+161;Gélase II;Italien;10/03/1118;29/01/1119
+162;Calixte II;Français;02/02/1119;13/12/1124
+163;Honorius II;Italien;21/12/1124;13/02/1130
+164;Innocent II;Italien;23/02/1130;24/09/1143
+165;Célestin II;Italien;26/09/1143;08/03/1144
+166;Lucius II;Italien;12/03/1144;15/02/1145
+167;Eugène III;Pisan;18/02/1145;08/07/1153
+168;Anastase IV;Romain;12/07/1153;03/12/1154
+169;Adrien IV;Anglais;04/12/1154;01/09/1159
+170;Alexandre III;Sienne;20/09/1159;30/08/1181
+171;Lucius III;Italien;01/09/1181;25/11/1185
+172;Urbain III;Milanais;25/11/1185;20/10/1187
+173;Grégoire VIII;Italien;21/10/1187;17/12/1187
+174;Clément III;Romain;19/12/1187;27/03/1191
+175;Célestin III;Romain;30/03/1191;08/01/1198
+176;Innocent III;Romain;08/01/1198;16/07/1216
+177;Honorius III;Romain;18/07/1216;18/03/1227
+178;Grégoire IX;Italien;19/03/1227;22/08/1241
+179;Célestin IV;Milanais;25/10/1241;10/11/1241
+180;Innocent IV;Génois;25/06/1243;07/12/1254
+181;Alexandre IV;Romain;12/12/125;25/05/1261
+182;Urbain IV;Français;29/08/1261;02/10/1264
+183;Clément IV;Français;05/02/1265;29/11/1268
+184;Grégoire X;Italien;01/09/1271;10/01/1276
+185;Innocent V;Savoie;21/01/1276;22/06/1276
+186;Adrien V;Génois;11/07/1276;18/08/1276
+187;Jean XXI;Portugais;08/09/1276;20/05/1277
+188;Nicolas III;Romain;25/11/1277;22/08/1280
+189;Martin IV;Français;22/02/1281;28/03/1285
+190;Honorius IV;Romain;02/04/1285;03/04/1287
+191;Nicolas IV;Italien;22/02/1288;04/04/1292
+192;St Célestin V;Italien;05/07/1294;13/12/1294
+193;Boniface VIII;Italien;24/12/1294;11/10/1303
+194;Benoît XI;Italien;22/10/1303;07/07/1304
+195;Clément V;Français;05/06/1305;20/04/1314
+196;Jean XXII;Français;07/08/1316;04/12/1334
+197;Benoît II;Français;20/12/1334;25/04/1342
+198;Clément VI;Français;07/05/1342;06/12/1352
+199;Innocent VI;Français;18/12/1352;12/09/1362
+200;Urbain V;Français;28/09/1362;19/12/1370
+201;Grégoire XI;Français;30/12/1370;27/03/1378
+202;Urbain VI;Italien;08/04/1378;15/10/1389
+203;Boniface IX;Italien;02/11/1389;01/10/1404
+204;Innocent VII;Italien;17/10/1404;06/11/1406
+205;Grégoire XII;Italien;30/11/1406;04/07/1415
+206;Martin V;Romain;11/11/1417;20/02/1431
+207;Eugène IV;Italien;03/03/1431;23/02/1447
+208;Nicolas V;Italien;06/03/1447;24/03/1455
+209;Calixte III;Espagnol;08/04/1455;06/08/1458
+210;Pie II;Italien;19/08/1458;15/08/1464
+211;Paul II;Italien;30/08/1464;26/07/1471
+212;Sixte IV;Italien;09/08/1471;12/08/1484
+213;Innocent VIII;Italien;29/08/1484;25/07/1492
+214;Alexandre VI;Espagnol;11/08/1492;18/08/1503
+215;Pie III;Italien;22/09/1503;18/10/1503
+216;Jules II;Italien;01/11/1503;21/02/1513
+217;Léon X;Italien;09/03/1513;01/12/1521
+218;Adrien VI;Pays Bas;09/01/1522;14/09/1523
+219;Clément VII;Italien;19/11/152;25/09/1534
+220;Paul III;Romain;13/10/1534;10/11/1549
+221;Jules III;Romain;07/02/1550;23/03/1555
+222;Marcel II;Italien;09/04/1555;30/04/1555
+223;Paul IV;Italien;23/05/1555;18/08/1559
+224;Pie IV;Italien;25/12/1559;09/12/1565
+225;St Pie V;Italien;07/01/1566;01/05/1572
+226;Grégoire XIII;Italien;13/05/1572;10/04/1585
+227;Sixte V;Italien;24/04/1585;27/08/1590
+228;Urbain VII;Romain;15/09/1590;27/09/1590
+229;Grégoire XIV;Italien;05/12/1590;16/10/1591
+230;Innocent IX;Italien;29/10/1591;30/12/1591
+231;Clément VIII;Italien;30/01/1592;03/03/1605
+232;Léon XI;Italien;01/04/1605;27/04/1605
+233;Paul V;Romain;16/05/1605;28/01/1621
+234;Grégoire XV;Italien;09/02/1621;08/07/1623
+235;Urbain VIII;Italien;06/08/1623;29/07/1644
+236;Innocent X;Romain;15/09/1644;07/01/1655
+237;Alexandre VII;Italien;07/04/1655;22/05/1667
+238;Clément IX;Italien;20/06/1667;09/12/1669
+239;Clément X;Romain;29/04/1670;22/07/1676
+240;Innocent XI;Italien;21/09/1676;12/08/1689
+241;Alexandre VIII;Italien;06/10/1689;01/02/1691
+242;Innocent XII;Italien;12/07/1691;27/09/1700
+243;Clément XI;Italien;23/11/1700;19/03/1721
+244;Innocent XIII;Romain;08/05/1721;07/03/1724
+245;Benoît XIII;Italien;29/05/1724;21/02/1730
+246;Clément XII;Italien;12/07/1730;06/02/1740
+247;Benoît XIV;Italien;17/08/1740;03/05/1758
+248;Clément XIII;Italien;06/07/1758;02/02/1769
+249;Clément XIV;Italien;19/05/1769;22/09/1774
+250;Pie VI;Italien;15/02/1775;29/08/1799
+251;Pie VII;Italien;14/03/1800;20/08/1823
+252;Léon XII;Italien;28/09/182;10/02/1829
+253;Pie VIII;Italien;31/03/1829;30/11/1830
+254;Grégoire XVI;Italien;02/02/1831;01/06/1846
+255;Pie IX;Italien;16/06/1846;07/02/1878
+256;Léon XIII;Italien;20/02/1878;20/07/1903
+257;St Pie X;Italien;04/08/1903;20/08/1914
+258;Benoît XV;Italien;03/09/1914;22/01/1922
+259;Pie XI;Italien;06/02/1922;10/02/1939
+260;Pie XII;Romain;02/03/1939;09/10/1958
+261;St Jean XXIII;Italien;28/10/1958;03/06/1963
+262;Paul VI;Italien;21/06/1963;06/08/1978
+263;Jean Paul I;Italien;26/08/1978;28/09/1978
+264;St Jean Paul II;Polonais;16/10/1978;02/04/2005
+265;Benoît XVI;Allemand;19/04/2005;28/02/2013
+266;François;Argentin;13/03/2013;2018;

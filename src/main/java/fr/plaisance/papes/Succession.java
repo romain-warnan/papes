@@ -20,6 +20,6 @@ public class Succession {
 
     @Override
     public String toString() {
-        return String.format("%s – %s (%d ans)", Papes.nomComplet(predecesseur), Papes.nomComplet(successeur), Papes.dureeVacanceTrone(this));
+        return String.format("%s – %s (%s)", Papes.nomComplet(predecesseur), Papes.nomComplet(successeur), Papes.affichageVacanceTrone(this));
     }
 }

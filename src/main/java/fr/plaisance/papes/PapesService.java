@@ -19,16 +19,16 @@ public class PapesService {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
     }
 
-    public Map<Pape, Integer> papesParDureeDeRegne(Collection<Pape> papes) {
+    public Map<Pape, Long> papesParDureeDeRegne(Collection<Pape> papes) {
         return papes.stream()
-                .sorted(Comparator.comparingInt(Papes::dureeRegne).reversed())
+                .sorted(Comparator.comparingLong(Papes::dureeRegne).reversed())
                 .collect(Collectors.toMap(Function.identity(), Papes::dureeRegne, (a, b) -> a, LinkedHashMap::new));
     }
 
-    public Map<Succession, Integer> vacancesDuTrone(List<Pape> papes) {
+    public Map<Succession, Long> vacancesDuTrone(List<Pape> papes) {
         return IntStream.range(1, papes.size())
                 .mapToObj(n -> new Succession(papes.get(n - 1), papes.get(n)))
-                .sorted(Comparator.comparingInt(Papes::dureeVacanceTrone).reversed())
+                .sorted(Comparator.comparingLong(Papes::dureeVacanceTrone).reversed())
                 .collect(Collectors.toMap(Function.identity(), Papes::dureeVacanceTrone, (a, b) -> a, LinkedHashMap::new));
     }
 }
