@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+echo 'Deleting docs/'
+rm -rf docs/
+
+echo 'Copying src/main/webapp/ -> docs/'
+cp -R src/main/webapp/ docs/
+
+echo 'Adding docs/'
+git add docs/*
