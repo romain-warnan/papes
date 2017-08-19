@@ -1,9 +1,9 @@
 (function () {
-    const context = document.getElementById('papes-par-saintete').getContext('2d')
+    const context = document.getElementById('papes-par-duree-de-regne').getContext('2d')
 
-    Chart.defaults.global.legend.position = 'bottom'
+    Chart.defaults.global.legend.position = 'top'
 
-    fetch('data/papes-par-saintete.json')
+    fetch('data/papes-par-duree-de-regne.json')
         .then(response => response.json())
         .then(json => draw(json))
 
@@ -12,7 +12,7 @@
         const values = json.map(item => item.value)
 
         const chart = new Chart(context, {
-            type: 'doughnut',
+            type: 'horizontalBar',
             data: {
                 datasets: [{
                     data: values,

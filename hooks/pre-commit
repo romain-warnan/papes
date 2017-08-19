@@ -1,7 +1,5 @@
 #!/usr/bin/sh
 echo 'Pre-commit hook: copying src/main/webapp/ -> docs/'
-mv docs/data/ data/
 rm -rf docs/
 cp -R src/main/webapp/ docs/
-mv data/ docs/
 git add docs/*
