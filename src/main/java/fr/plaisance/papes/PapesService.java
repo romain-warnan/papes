@@ -31,4 +31,12 @@ public class PapesService {
                 .sorted(Comparator.comparingLong(Papes::dureeVacanceTrone).reversed())
                 .collect(Collectors.toMap(Function.identity(), Papes::dureeVacanceTrone, (a, b) -> a, LinkedHashMap::new));
     }
+
+    public Map<Boolean, Long> papesParSaintete(Collection<Pape> papes) {
+        return papes.stream()
+                .collect(Collectors.groupingBy(Pape::getSaint, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
+    }
 }

@@ -45,7 +45,11 @@ public class PapesApplicationTests {
 
 	@Test
 	public void vacancesDuTrone() {
-		//Assert.assertEquals(266, service.vacancesDuTrone(papes).entrySet().size());
-		service.vacancesDuTrone(papes).forEach((k, v) -> System.out.println(k));
+		Assert.assertEquals(266, service.vacancesDuTrone(papes).entrySet().size());
+	}
+
+	@Test
+	public void papesParSaintete() {
+		Assert.assertEquals(76, service.papesParSaintete(papes).get(Boolean.TRUE).longValue());
 	}
 }
