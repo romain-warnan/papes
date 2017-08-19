@@ -38,9 +38,9 @@ public class DataGenerator {
     }
 
     private void generatePapeParDureeDeRegne() throws IOException {
-        List<Item> items = Itemizer.itemize(service.papesParDureeDeRegne(papes), entry -> Item.of(String.format("%s\n%s", Papes.nomComplet(entry.getKey()), Papes.affichageDureeRegne(entry.getKey())), entry.getValue()));
+        List<Item> items = Itemizer.itemize(service.plusLongsPontificats(papes), entry -> Item.of(String.format("%s : %s", Papes.nomComplet(entry.getKey()), Papes.affichageDureeRegne(entry.getKey())), entry.getValue()));
         String json = mapper.writeValueAsString(items);
-        Files.write(Paths.get("src/main/webapp/data/papes-par-duree-de-regne.json"), json.getBytes());
+        Files.write(Paths.get("src/main/webapp/data/plus-longs-regnes.json"), json.getBytes());
     }
 
     private void generatePapeParSaintete() throws IOException {

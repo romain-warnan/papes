@@ -22,7 +22,14 @@ public class PapesService {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
     }
 
-    public Map<Pape, Long> papesParDureeDeRegne(Collection<Pape> papes) {
+    public Map<Pape, Long> plusCourtsPontificats(Collection<Pape> papes) {
+        return papes.stream()
+                .sorted(Comparator.comparingLong(Papes::dureeRegne))
+                .limit(20)
+                .collect(Collectors.toMap(Function.identity(), Papes::dureeRegne, (a, b) -> a, LinkedHashMap::new));
+    }
+
+    public Map<Pape, Long> plusLongsPontificats(Collection<Pape> papes) {
         return papes.stream()
                 .sorted(Comparator.comparingLong(Papes::dureeRegne).reversed())
                 .limit(10)

@@ -47,7 +47,7 @@ public class PapesApplicationTests {
 
 	@Test
 	public void papesParDureeDeRegne() {
-		Assert.assertEquals(266, service.papesParDureeDeRegne(papes).entrySet().size());
+		Assert.assertEquals(266, service.plusLongsPontificats(papes).entrySet().size());
 	}
 
 	@Test
