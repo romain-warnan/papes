@@ -1,5 +1,7 @@
-package fr.plaisance.papes;
+package fr.plaisance.papes.service;
 
+import fr.plaisance.papes.model.Pape;
+import fr.plaisance.papes.model.PapeBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

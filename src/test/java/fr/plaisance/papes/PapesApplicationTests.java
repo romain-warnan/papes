@@ -1,5 +1,9 @@
 package fr.plaisance.papes;
 
+import fr.plaisance.papes.data.DataGenerator;
+import fr.plaisance.papes.model.Pape;
+import fr.plaisance.papes.service.PapesLoader;
+import fr.plaisance.papes.service.PapesService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,6 +24,9 @@ public class PapesApplicationTests {
 
 	@Autowired
 	private PapesService service;
+
+	@Autowired
+	private DataGenerator generator;
 
 	private List<Pape> papes;
 

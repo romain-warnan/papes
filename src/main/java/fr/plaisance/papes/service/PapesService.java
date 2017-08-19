@@ -1,5 +1,8 @@
-package fr.plaisance.papes;
+package fr.plaisance.papes.service;
 
+import fr.plaisance.papes.model.Pape;
+import fr.plaisance.papes.model.Papes;
+import fr.plaisance.papes.model.Succession;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

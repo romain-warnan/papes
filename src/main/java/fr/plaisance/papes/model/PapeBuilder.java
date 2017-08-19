@@ -1,4 +1,4 @@
-package fr.plaisance.papes;
+package fr.plaisance.papes.model;
 
 import org.springframework.stereotype.Service;
 

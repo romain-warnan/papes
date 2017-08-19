@@ -1,4 +1,4 @@
-package fr.plaisance.papes;
+package fr.plaisance.papes.model;
 
 public class Succession {
 
