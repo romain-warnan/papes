@@ -5,11 +5,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @FunctionalInterface
-public interface Itemizer<K, V> {
+public interface Itemizer<K> {
 
-    Item map(Map.Entry<K, V> entry);
+    Item map(Map.Entry<K, Long> entry);
 
-    static <K, V> List<Item> itemize(Map<K, V> map, Itemizer<K, V> itemizer) {
+    static <K> List<Item> itemize(Map<K, Long> map, Itemizer<K> itemizer) {
         return map
                 .entrySet()
                 .stream()

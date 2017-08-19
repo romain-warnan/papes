@@ -28,8 +28,13 @@ public abstract class Papes {
     private static String affichageDuree(LocalDate debut, LocalDate fin) {
         LocalDate localDate = LocalDate.from(debut);
         long years = localDate.until(fin, ChronoUnit.YEARS);
+
+        localDate = localDate.plusYears(years);
         long months = localDate.until(fin, ChronoUnit.MONTHS);
+
+        localDate = localDate.plusMonths(months);
         long days = localDate.until(fin, ChronoUnit.DAYS);
+
         StringBuilder builder = new StringBuilder();
         if (years > 0) {
             if (years == 1) {
