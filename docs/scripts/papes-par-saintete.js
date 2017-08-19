@@ -11,22 +11,21 @@ const draw = (json) => {
     const chart = new Chart(context, {
         type: 'doughnut',
         label: 'Papes canonisés',
+
         data: {
             datasets: [{
                 data: values,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)'
+                    'rgba(255, 215, 0, 1)',
+                    'rgba(65, 105, 225, 1)'
                 ],
                 borderWidth: 1
             }],
             labels: labels
         },
         options: {
+            rotation: Math.PI,
+            // circumference: Math.PI,
             animation: {
                 animateRotate: true,
                 animateScale: true
