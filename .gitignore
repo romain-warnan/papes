@@ -1,7 +1,10 @@
 .idea/
-target/
 .mvn/
 
+target/
+node_modules/
+
 *.iml
+
 mvnw
 mvnw.cmd
