@@ -1,5 +1,4 @@
 (function () {
-
     const context = document.getElementById('plus-longs-regnes').getContext('2d')
 
     Chart.defaults.global.defaultColor = 'rgba(251,147,20,0.5)'
