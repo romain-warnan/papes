@@ -1,4 +1,6 @@
 (function () {
+
+    console.log(document.getElementById('papes-par-saintete'))
     const context = document.getElementById('papes-par-saintete').getContext('2d')
 
     Chart.defaults.global.legend.position = 'bottom'

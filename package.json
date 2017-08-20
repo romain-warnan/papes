@@ -1,0 +1,36 @@
+{
+  "name": "papes",
+  "version": "1.0.0",
+  "description": "Statistiques sur les papes",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romain-warnan/papes.git"
+  },
+  "keywords": [
+    "java",
+    "c3js"
+  ],
+  "author": "Romain Warnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romain-warnan/papes/issues"
+  },
+  "homepage": "https://github.com/romain-warnan/papes#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^7.0.0",
+    "grunt-browserify": "^5.1.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.6.0"
+  }
+}
