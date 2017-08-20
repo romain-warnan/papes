@@ -1,5 +1,6 @@
 const Chart = require('chart.js')
 const c3 = require('c3')
+const d3 = require('d3')
 const _ = require('lodash');(function () {
     const context = document.getElementById('papes-par-saintete').getContext('2d')
 
@@ -112,10 +113,10 @@ const _ = require('lodash');(function () {
             .map(item => item.label)
             .map(label => label.substring(0, label.indexOf(' : ')))
 
-        labels.unshift('Papes')
+        labels.unshift('labels')
 
         const values = json.map(item => item.value)
-        values.unshift('Durée du pontificat en jours')
+        values.unshift('values')
 
         const tooltipValues = json
             .map(item => item.label)
@@ -125,8 +126,15 @@ const _ = require('lodash');(function () {
             bindto: '#plus-longs-regnes',
             data: {
                 type: 'bar',
-                x: 'Papes',
-                columns: [labels, values]
+                x: 'labels',
+                columns: [labels, values],
+                colors: {
+                    values: '#009688'
+                },
+                color: function (color, d) {
+                    console.log(color, d)
+                    return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * d.index) : color
+                }
             },
             axis: {
                 rotated: true,
@@ -139,6 +147,9 @@ const _ = require('lodash');(function () {
                     name: (name, ratio, id, index) => 'Règne',
                     value: (value, ratio, id, index) => tooltipValues[index]
                 }
+            },
+            legend: {
+                hide: 'values'
             }
         });
     }
