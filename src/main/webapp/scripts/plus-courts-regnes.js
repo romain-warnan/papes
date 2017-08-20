@@ -39,21 +39,14 @@
                     xAxes: [{
                         ticks: {
                             min: 0
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'jours'
                         }
                     }]
                 }
             }
         })
-    }
-
-    const tooltipLabel = (tooltipItem, data) => {
-        const index = tooltipItem.index
-        const datasetIndex = tooltipItem.datasetIndex
-        const values = data.datasets[datasetIndex].data
-        const total = _.sum(values);
-        const value = values[index]
-        const percent = _.round(value * 100 / total)
-
-        return `${percent} % (${value})`
     }
 })()
