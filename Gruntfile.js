@@ -2,6 +2,15 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        watch: {
+            scripts: {
+                files: ['src/main/webapp/scripts/*.js'],
+                tasks: ['concat:dist', 'browserify:dev'],
+                options: {
+                    spawn: true,
+                },
+            },
+        },
         concat: {
             options: {
                 separator: ';'
@@ -43,6 +52,7 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-babel');

@@ -1,52 +1,41 @@
 (function () {
-    const context = document.getElementById('plus-longs-regnes').getContext('2d')
-
-    Chart.defaults.global.defaultColor = 'rgba(251,147,20,0.5)'
-
     fetch('data/plus-longs-regnes.json')
         .then(response => response.json())
         .then(json => draw(json))
 
     const draw = (json) => {
-        const labels = json.map(item => item.label)
-        const values = json.map(item => item.value)
+        const labels = json
+            .map(item => item.label)
+            .map(label => label.substring(0, label.indexOf(' : ')))
 
-        const chart = new Chart(context, {
-            type: 'horizontalBar',
+        labels.unshift('Papes')
+
+        const values = json.map(item => item.value)
+        values.unshift('Durée du pontificat en jours')
+
+        const tooltipValues = json
+            .map(item => item.label)
+            .map(label => label.substring(label.indexOf(' : ') + 3, label.length))
+
+        c3.generate({
+            bindto: '#plus-longs-regnes',
             data: {
-                datasets: [{
-                    data: values,
-                    backgroundColor: [
-                        '#009688',
-                        '#19a093',
-                        '#32ab9f',
-                        '#4cb5ab',
-                        '#66c0b7',
-                        '#7fcac3',
-                        '#99d5cf',
-                        '#b2dfdb',
-                        '#cceae7',
-                        '#e5f4f3'
-                    ]
-                }],
-                labels: labels
+                type: 'bar',
+                x: 'Papes',
+                columns: [labels, values]
             },
-            options: {
-                legend: {
-                    display: false
-                },
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            min: 0
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'jours'
-                        }
-                    }]
+            axis: {
+                rotated: true,
+                x: {
+                    type: 'category'
+                }
+            },
+            tooltip: {
+                format: {
+                    name: (name, ratio, id, index) => 'Règne',
+                    value: (value, ratio, id, index) => tooltipValues[index]
                 }
             }
-        })
+        });
     }
 })()
