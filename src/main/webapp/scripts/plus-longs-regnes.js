@@ -27,7 +27,6 @@
                     values: '#009688'
                 },
                 color: function (color, d) {
-                    console.log(color, d)
                     return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * d.index) : color
                 }
             },
