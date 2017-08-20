@@ -17,16 +17,16 @@
                 datasets: [{
                     data: values,
                     backgroundColor: [
-                        '#005a51',
-                        '#00695f',
-                        '#00786c',
-                        '#00877a',
                         '#009688',
                         '#19a093',
                         '#32ab9f',
                         '#4cb5ab',
                         '#66c0b7',
-                        '#7fcac3'
+                        '#7fcac3',
+                        '#99d5cf',
+                        '#b2dfdb',
+                        '#cceae7',
+                        '#e5f4f3'
                     ]
                 }],
                 labels: labels

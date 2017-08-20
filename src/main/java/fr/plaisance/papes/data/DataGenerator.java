@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class DataGenerator {
@@ -34,18 +35,33 @@ public class DataGenerator {
 
     public void generateData() throws IOException {
         this.generatePapeParSaintete();
-        this.generatePapeParDureeDeRegne();
+        this.generatePlusLongsRegnes();
+        this.generatePlusCourtsRegnes();
     }
 
-    private void generatePapeParDureeDeRegne() throws IOException {
-        List<Item> items = Itemizer.itemize(service.plusLongsPontificats(papes), entry -> Item.of(String.format("%s : %s", Papes.nomComplet(entry.getKey()), Papes.affichageDureeRegne(entry.getKey())), entry.getValue()));
-        String json = mapper.writeValueAsString(items);
+    private void generatePlusLongsRegnes() throws IOException {
+        List<Item> plusLongsPontificats = Itemizer.itemize(service.plusLongsPontificats(papes), this::itemForDureeRegne);
+        String json = mapper.writeValueAsString(plusLongsPontificats);
         Files.write(Paths.get("src/main/webapp/data/plus-longs-regnes.json"), json.getBytes());
     }
 
+    private void generatePlusCourtsRegnes() throws IOException {
+        List<Item> plusLongsPontificats = Itemizer.itemize(service.plusCourtsPontificats(papes), this::itemForDureeRegne);
+        String json = mapper.writeValueAsString(plusLongsPontificats);
+        Files.write(Paths.get("src/main/webapp/data/plus-courts-regnes.json"), json.getBytes());
+    }
+
+    private Item itemForDureeRegne(Map.Entry<Pape, Long> entry) {
+        return Item.of(String.format("%s : %s", Papes.nomComplet(entry.getKey()), Papes.affichageDureeRegne(entry.getKey())), entry.getValue());
+    }
+
     private void generatePapeParSaintete() throws IOException {
-        List<Item> items = Itemizer.itemize(service.papesParSaintete(papes), entry -> Item.of(entry.getKey() ? "Canonisé" : "Pas canonisé", entry.getValue()));
+        List<Item> items = Itemizer.itemize(service.papesParSaintete(papes), this::itemForSaintete);
         String json = mapper.writeValueAsString(items);
         Files.write(Paths.get("src/main/webapp/data/papes-par-saintete.json"), json.getBytes());
+    }
+
+    private Item itemForSaintete(Map.Entry<Boolean, Long> entry) {
+        return Item.of(entry.getKey() ? "Canonisé" : "Pas canonisé", entry.getValue());
     }
 }

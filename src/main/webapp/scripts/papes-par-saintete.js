@@ -8,8 +8,8 @@
         .then(json => draw(json))
 
     const draw = (json) => {
-        const labels = json.map(item => item.label)
-        const values = json.map(item => item.value)
+        const labels = _.reverse(json.map(item => item.label))
+        const values = _.reverse(json.map(item => item.value))
 
         const chart = new Chart(context, {
             type: 'doughnut',

@@ -1,9 +1,9 @@
 (function () {
-    const context = document.getElementById('plus-longs-regnes').getContext('2d')
+    const context = document.getElementById('plus-courts-regnes').getContext('2d')
 
     Chart.defaults.global.defaultColor = 'rgba(251,147,20,0.5)'
 
-    fetch('data/plus-longs-regnes.json')
+    fetch('data/plus-courts-regnes.json')
         .then(response => response.json())
         .then(json => draw(json))
 
@@ -17,16 +17,16 @@
                 datasets: [{
                     data: values,
                     backgroundColor: [
-                        '#009688',
-                        '#19a093',
-                        '#32ab9f',
-                        '#4cb5ab',
-                        '#66c0b7',
-                        '#7fcac3',
-                        '#99d5cf',
-                        '#b2dfdb',
-                        '#cceae7',
-                        '#e5f4f3'
+                        '#a90f27',
+                        '#b1263c',
+                        '#ba3e52',
+                        '#c25767',
+                        '#cb6f7d',
+                        '#d48793',
+                        '#dc9fa8',
+                        '#e5b7be',
+                        '#edcfd3',
+                        '#f6e7e9'
                     ]
                 }],
                 labels: labels

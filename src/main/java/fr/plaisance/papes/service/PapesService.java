@@ -25,7 +25,7 @@ public class PapesService {
     public Map<Pape, Long> plusCourtsPontificats(Collection<Pape> papes) {
         return papes.stream()
                 .sorted(Comparator.comparingLong(Papes::dureeRegne))
-                .limit(20)
+                .limit(10)
                 .collect(Collectors.toMap(Function.identity(), Papes::dureeRegne, (a, b) -> a, LinkedHashMap::new));
     }
 
