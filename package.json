@@ -33,7 +33,6 @@
     "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
-    "c3": "^0.4.17",
-    "chart.js": "^2.6.0"
+    "c3": "^0.4.17"
   }
 }
