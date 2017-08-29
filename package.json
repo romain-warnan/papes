@@ -30,6 +30,9 @@
     "grunt": "^1.0.1",
     "grunt-babel": "^7.0.0",
     "grunt-browserify": "^5.1.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
