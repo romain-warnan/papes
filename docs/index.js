@@ -1,159 +1,120 @@
-const Chart = require('chart.js')
+const c3 = require('c3')
+const d3 = require('d3')
 const _ = require('lodash');(function () {
-
-    console.log(document.getElementById('papes-par-saintete'))
-    const context = document.getElementById('papes-par-saintete').getContext('2d')
-
-    Chart.defaults.global.legend.position = 'bottom'
-
     fetch('data/papes-par-saintete.json')
         .then(response => response.json())
         .then(json => draw(json))
 
     const draw = (json) => {
-        const labels = _.reverse(json.map(item => item.label))
-        const values = _.reverse(json.map(item => item.value))
-
-        const chart = new Chart(context, {
-            type: 'doughnut',
+        const columns = json.map(item => [item.label, item.value])
+        const colors = {}
+        colors[columns[0][1]] = '#e1b941'
+        colors[columns[0][0]] = '#4169e1'
+        c3.generate({
+            bindto: '#papes-par-saintete',
             data: {
-                datasets: [{
-                    data: values,
-                    borderColor: [
-                        'rgba(251,147,20, 1)',
-                        'rgba(65, 105, 225, 1)'
-                    ],
-                    backgroundColor: [
-                        'rgba(251,147,20, 0.5)',
-                        'rgba(65, 105, 225, 0.5)'
-                    ],
-                    borderWidth: 2
-                }],
-                labels: labels
-            },
-            options: {
-                rotation: Math.PI,
-                tooltips: {
-                    callbacks: {
-                        label: tooltipLabel
-                    }
-                }
+                type: 'donut',
+                columns: columns,
+                colors: colors
             }
-        })
-    }
-
-    const tooltipLabel = (tooltipItem, data) => {
-        const index = tooltipItem.index
-        const datasetIndex = tooltipItem.datasetIndex
-        const values = data.datasets[datasetIndex].data
-        const total = _.sum(values);
-        const value = values[index]
-        const percent = _.round(value * 100 / total)
-
-        return `${percent} % (${value})`
+        });
     }
 })();(function () {
-
-    const context = document.getElementById('plus-courts-regnes').getContext('2d')
-
-    Chart.defaults.global.defaultColor = 'rgba(251,147,20,0.5)'
-
     fetch('data/plus-courts-regnes.json')
         .then(response => response.json())
         .then(json => draw(json))
 
     const draw = (json) => {
-        const labels = json.map(item => item.label)
-        const values = json.map(item => item.value)
+        const labels = json
+            .map(item => item.label)
+            .map(label => label.substring(0, label.indexOf(' : ')))
 
-        const chart = new Chart(context, {
-            type: 'horizontalBar',
+        labels.unshift('labels')
+
+        const values = json.map(item => item.value)
+        values.unshift('values')
+
+        const tooltipValues = json
+            .map(item => item.label)
+            .map(label => label.substring(label.indexOf(' : ') + 3, label.length))
+
+        c3.generate({
+            bindto: '#plus-courts-regnes',
             data: {
-                datasets: [{
-                    data: values,
-                    backgroundColor: [
-                        '#a90f27',
-                        '#b1263c',
-                        '#ba3e52',
-                        '#c25767',
-                        '#cb6f7d',
-                        '#d48793',
-                        '#dc9fa8',
-                        '#e5b7be',
-                        '#edcfd3',
-                        '#f6e7e9'
-                    ]
-                }],
-                labels: labels
-            },
-            options: {
-                legend: {
-                    display: false
+                type: 'bar',
+                x: 'labels',
+                columns: [labels, values],
+                colors: {
+                    values: '#a90f27'
                 },
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            min: 0
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'jours'
-                        }
-                    }]
+                color: function (color, d) {
+                    return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * (9 - d.index)) : color
                 }
+            },
+            axis: {
+                rotated: true,
+                x: {
+                    type: 'category'
+                }
+            },
+            tooltip: {
+                format: {
+                    name: (name, ratio, id, index) => 'Règne',
+                    value: (value, ratio, id, index) => tooltipValues[index]
+                }
+            },
+            legend: {
+                hide: 'values'
             }
-        })
+        });
     }
 })();(function () {
-
-    const context = document.getElementById('plus-longs-regnes').getContext('2d')
-
-    Chart.defaults.global.defaultColor = 'rgba(251,147,20,0.5)'
-
     fetch('data/plus-longs-regnes.json')
         .then(response => response.json())
         .then(json => draw(json))
 
     const draw = (json) => {
-        const labels = json.map(item => item.label)
-        const values = json.map(item => item.value)
+        const labels = json
+            .map(item => item.label)
+            .map(label => label.substring(0, label.indexOf(' : ')))
 
-        const chart = new Chart(context, {
-            type: 'horizontalBar',
+        labels.unshift('labels')
+
+        const values = json.map(item => item.value)
+        values.unshift('values')
+
+        const tooltipValues = json
+            .map(item => item.label)
+            .map(label => label.substring(label.indexOf(' : ') + 3, label.length))
+
+        c3.generate({
+            bindto: '#plus-longs-regnes',
             data: {
-                datasets: [{
-                    data: values,
-                    backgroundColor: [
-                        '#009688',
-                        '#19a093',
-                        '#32ab9f',
-                        '#4cb5ab',
-                        '#66c0b7',
-                        '#7fcac3',
-                        '#99d5cf',
-                        '#b2dfdb',
-                        '#cceae7',
-                        '#e5f4f3'
-                    ]
-                }],
-                labels: labels
-            },
-            options: {
-                legend: {
-                    display: false
+                type: 'bar',
+                x: 'labels',
+                columns: [labels, values],
+                colors: {
+                    values: '#009688'
                 },
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            min: 0
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'jours'
-                        }
-                    }]
+                color: function (color, d) {
+                    return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * d.index) : color
                 }
+            },
+            axis: {
+                rotated: true,
+                x: {
+                    type: 'category'
+                }
+            },
+            tooltip: {
+                format: {
+                    name: (name, ratio, id, index) => 'Règne',
+                    value: (value, ratio, id, index) => tooltipValues[index]
+                }
+            },
+            legend: {
+                hide: 'values'
             }
-        })
+        });
     }
 })()

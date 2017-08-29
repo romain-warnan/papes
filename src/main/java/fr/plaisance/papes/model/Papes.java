@@ -38,14 +38,14 @@ public abstract class Papes {
         StringBuilder builder = new StringBuilder();
         if (years > 0) {
             if (years == 1) {
-                builder.append("1 an, ");
+                builder.append("1 an ");
             }
             else {
-                builder.append(String.format("%d ans, ", years));
+                builder.append(String.format("%d ans ", years));
             }
         }
         if (months > 0) {
-            builder.append(String.format("%d mois, ", months));
+            builder.append(String.format("%d mois ", months));
         }
         if (days > 0) {
             if (days == 1) {

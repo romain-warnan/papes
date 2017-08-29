@@ -26,11 +26,13 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "d3": "^4.10.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^7.0.0",
-    "grunt-browserify": "^5.1.0"
+    "grunt-browserify": "^5.1.0",
+    "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
-    "chart.js": "^2.6.0"
+    "c3": "^0.4.17"
   }
 }
