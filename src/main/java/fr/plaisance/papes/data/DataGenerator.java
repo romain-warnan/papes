@@ -77,6 +77,6 @@ public class DataGenerator {
     }
 
     private Item itemForNationnalite(Map.Entry<String, Long> entry) {
-        return Item.of(entry.getValue() < 3 ? "Autre" : entry.getKey(), entry.getValue());
+        return Item.of(entry.getValue() < 5 ? "Autre" : entry.getKey(), entry.getValue());
     }
 }
