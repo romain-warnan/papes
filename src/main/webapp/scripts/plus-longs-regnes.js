@@ -1,50 +1,52 @@
-(function () {
-    fetch('data/plus-longs-regnes.json')
-        .then(response => response.json())
-        .then(json => draw(json))
+import c3 from 'c3'
 
-    const draw = (json) => {
-        const labels = json
-            .map(item => item.label)
-            .map(label => label.substring(0, label.indexOf(' : ')))
+const load = () => fetch('data/plus-longs-regnes.json')
+    .then(response => response.json())
+    .then(json => draw(json))
 
-        labels.unshift('labels')
+const draw = (json) => {
+    const labels = json
+        .map(item => item.label)
+        .map(label => label.substring(0, label.indexOf(' : ')))
 
-        const values = json.map(item => item.value)
-        values.unshift('values')
+    labels.unshift('labels')
 
-        const tooltipValues = json
-            .map(item => item.label)
-            .map(label => label.substring(label.indexOf(' : ') + 3, label.length))
+    const values = json.map(item => item.value)
+    values.unshift('values')
 
-        c3.generate({
-            bindto: '#plus-longs-regnes',
-            data: {
-                type: 'bar',
-                x: 'labels',
-                columns: [labels, values],
-                colors: {
-                    values: '#009688'
-                },
-                color: function (color, d) {
-                    return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * d.index) : color
-                }
+    const tooltipValues = json
+        .map(item => item.label)
+        .map(label => label.substring(label.indexOf(' : ') + 3, label.length))
+
+    c3.generate({
+        bindto: '#plus-longs-regnes',
+        data: {
+            type: 'bar',
+            x: 'labels',
+            columns: [labels, values],
+            colors: {
+                values: '#009688',
             },
-            axis: {
-                rotated: true,
-                x: {
-                    type: 'category'
-                }
+            color: function (color, d) {
+                return d.id && d.id === 'values' ? d3.rgb(color).brighter(0.13 * d.index) : color
             },
-            tooltip: {
-                format: {
-                    name: (name, ratio, id, index) => 'Règne',
-                    value: (value, ratio, id, index) => tooltipValues[index]
-                }
+        },
+        axis: {
+            rotated: true,
+            x: {
+                type: 'category',
             },
-            legend: {
-                hide: 'values'
-            }
-        });
-    }
-})()
+        },
+        tooltip: {
+            format: {
+                name: (name, ratio, id, index) => 'Règne',
+                value: (value, ratio, id, index) => tooltipValues[index],
+            },
+        },
+        legend: {
+            hide: 'values',
+        }
+    });
+}
+
+export default load;
