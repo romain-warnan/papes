@@ -2,13 +2,22 @@
 
 echo 'Pre-commit hook'
 
-echo '[1/2] Building JavaScript…'
 
-yarn build
-git add src/main/webapp/papes.js
+if git status src/main/webapp/scripts | grep --quiet "src/main/webapp/scripts"
+then
+    echo '* Building JavaScript'
+    yarn build
+    git add src/main/webapp/papes.js
+else
+    echo '* JavaScript has not changed'
+fi
 
-echo '[2/2] Copying src/main/webapp/ -> docs/'
-
-rm -rf docs/
-cp -R src/main/webapp/ docs/
-git add docs/*
+if git status src/main/webapp | grep --quiet "src/main/webapp"
+then
+    echo '* Copying src/main/webapp/ -> docs/'
+    rm -rf docs/
+    cp -R src/main/webapp/ docs/
+    git add docs/*
+else
+    echo '* webapp/ has not changed'
+fi
