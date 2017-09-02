@@ -1,5 +1,14 @@
 #!/usr/bin/sh
-echo 'Pre-commit hook: copying src/main/webapp/ -> docs/'
+
+echo 'Pre-commit hook'
+
+echo '[1/2] Building JavaScript…'
+
+yarn build
+git add src/main/webapp/papes.js
+
+echo '[2/2] Copying src/main/webapp/ -> docs/'
+
 rm -rf docs/
 cp -R src/main/webapp/ docs/
 git add docs/*
