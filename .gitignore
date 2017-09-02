@@ -5,6 +5,7 @@ target/
 node_modules/
 
 *.iml
+*.log
 
 mvnw
 mvnw.cmd

@@ -14,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Service
 public class DataGenerator {
@@ -37,6 +38,7 @@ public class DataGenerator {
         this.generatePapeParSaintete();
         this.generatePlusLongsRegnes();
         this.generatePlusCourtsRegnes();
+        this.generatePapeParNationalite();
     }
 
     private void generatePlusLongsRegnes() throws IOException {
@@ -63,5 +65,18 @@ public class DataGenerator {
 
     private Item itemForSaintete(Map.Entry<Boolean, Long> entry) {
         return Item.of(entry.getKey() ? "Canonisé" : "Pas canonisé", entry.getValue());
+    }
+
+    private void generatePapeParNationalite() throws IOException {
+        Map<String, Long> map = Itemizer.itemize(service.papesParNationalite(papes), this::itemForNationnalite)
+                .stream()
+                .collect(Collectors.groupingBy(Item::getLabel, Collectors.summingLong(Item::getValue)));
+        List<Item> items = Itemizer.itemize(map, entry -> Item.of(entry.getKey(), entry.getValue()));
+        String json = mapper.writeValueAsString(items);
+        Files.write(Paths.get("src/main/webapp/data/papes-par-nationalite.json"), json.getBytes());
+    }
+
+    private Item itemForNationnalite(Map.Entry<String, Long> entry) {
+        return Item.of(entry.getValue() < 5 ? "Autre" : entry.getKey(), entry.getValue());
     }
 }

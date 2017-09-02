@@ -49,4 +49,4 @@ const draw = (json) => {
     });
 }
 
-export default load;
+export default load
