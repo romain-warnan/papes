@@ -4,12 +4,12 @@ const load = () => fetch('data/papes-par-nationalite.json')
     .then(response => response.json())
     .then(json => draw(json))
 
-
 const draw = (json) => {
+
     const columns = json.map(item => [item.label, item.value])
-    // const colors = {}
-    // colors[columns[1][0]] = '#e1b941'
-    // colors[columns[0][0]] = '#4169e1'
+    const labels = json.map(item => item.label)
+    const values = json.map(item => item.value)
+
     c3.generate({
         bindto: '#papes-par-nationalite',
         data: {
@@ -17,7 +17,16 @@ const draw = (json) => {
             columns: columns,
             // colors: colors,
         },
-    });
+        tooltip: {
+            format: {
+                name: (name, ratio, id, index) => labels[index],
+                value: (value, ratio, id, index) => {
+                    const number = values[index]
+                    return `${number} (${Math.round(100 * 10 * ratio) / 10} %)`
+                },
+            },
+        },
+    })
 }
 
-export default load;
+export default load

@@ -8,7 +8,6 @@ const draw = (json) => {
     const labels = json
         .map(item => item.label)
         .map(label => label.substring(0, label.indexOf(' : ')))
-
     labels.unshift('labels')
 
     const values = json.map(item => item.value)
@@ -49,4 +48,4 @@ const draw = (json) => {
     });
 }
 
-export default load;
+export default load

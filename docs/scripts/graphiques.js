@@ -1,7 +1,7 @@
-import papesParSaintete from './papes-par-saintete';
-import papesParNationalite from './papes-par-nationalite';
-import plusCourtsRegnes from './plus-courts-regnes';
-import plusLongsRegnes from './plus-longs-regnes';
+import papesParSaintete from './papes-par-saintete'
+import papesParNationalite from './papes-par-nationalite'
+import plusCourtsRegnes from './plus-courts-regnes'
+import plusLongsRegnes from './plus-longs-regnes'
 
 const graphiques = {
     papesParSaintete: papesParSaintete,
@@ -10,4 +10,4 @@ const graphiques = {
     papesParNationalite: papesParNationalite,
 }
 
-export default graphiques;
+export default graphiques
