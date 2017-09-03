@@ -60,4 +60,13 @@ public class PapesService {
                 .stream()
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
     }
+
+    public Map<Integer, List<Pape>> papesParSiecle(Collection<Pape> papes) {
+        return papes.stream()
+                .collect(Collectors.groupingBy(Papes::siecle, Collectors.toList()))
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
 }

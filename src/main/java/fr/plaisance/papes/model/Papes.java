@@ -57,4 +57,8 @@ public abstract class Papes {
         }
         return builder.toString().trim();
     }
+
+    public static Integer siecle(Pape pape) {
+        return 1 + (pape.getElection().getYear() / 100);
+    }
 }

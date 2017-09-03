@@ -3,9 +3,9 @@ package fr.plaisance.papes.data;
 public class Item {
 
     private String label;
-    private Long value;
+    private Object value;
 
-    public static Item of(String label, Long value) {
+    public static Item of(String label, Object value) {
         Item item = new Item();
         item.label = label;
         item.value = value;
@@ -16,7 +16,7 @@ public class Item {
         return label;
     }
 
-    public Long getValue() {
+    public Object getValue() {
         return value;
     }
 }

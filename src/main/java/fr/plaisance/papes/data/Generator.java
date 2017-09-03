@@ -40,6 +40,7 @@ public class Generator {
         this.generatePlusCourtsRegnes();
         this.generatePapeParNationalite();
         this.generatePapeParNomDeRegne();
+        this.generatePapeParSiecle();
     }
 
     private void generatePlusLongsRegnes() throws IOException {
@@ -71,7 +72,7 @@ public class Generator {
     private void generatePapeParNationalite() throws IOException {
         Map<String, Long> map = Itemizer.itemize(service.papesParNationalite(papes), this::itemForNationnalite)
                 .stream()
-                .collect(Collectors.groupingBy(Item::getLabel, Collectors.summingLong(Item::getValue)));
+                .collect(Collectors.groupingBy(Item::getLabel, Collectors.summingLong(item -> (Long) item.getValue())));
         List<Item> items = Itemizer.itemize(map, entry -> Item.of(entry.getKey(), entry.getValue()));
         String json = mapper.writeValueAsString(items);
         Files.write(Paths.get("src/main/webapp/data/papes-par-nationalite.json"), json.getBytes());
@@ -89,5 +90,17 @@ public class Generator {
 
     private Item itemForNomDeRegne(Map.Entry<String, Long> entry) {
         return Item.of(entry.getKey(), entry.getValue());
+    }
+
+    private void generatePapeParSiecle() throws IOException {
+        List<Item> items = Itemizer.itemize(service.papesParSiecle(papes), this::itemForSiecle);
+        String json = mapper.writeValueAsString(items);
+        Files.write(Paths.get("src/main/webapp/data/papes-par-siecle.json"), json.getBytes());
+    }
+
+    private Item itemForSiecle(Map.Entry<Integer, List<Pape>> entry) {
+        List<Long> value = entry.getValue().stream().map(Papes::dureeRegne).collect(Collectors.toList());
+        String label = RomanNumber.toRoman(entry.getKey());
+        return Item.of(label, value);
     }
 }
