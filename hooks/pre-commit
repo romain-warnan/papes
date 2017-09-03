@@ -3,7 +3,7 @@
 echo 'Pre-commit hook'
 
 
-if git status src/main/webapp/scripts | grep --quiet "src/main/webapp/scripts"
+if git diff --cached --name-only | grep --quiet "src/main/webapp/scripts"
 then
     echo '* Building JavaScript'
     yarn build
@@ -12,7 +12,7 @@ else
     echo '* JavaScript has not changed'
 fi
 
-if git status src/main/webapp | grep --quiet "src/main/webapp"
+if git diff --cached --name-only | grep --quiet "src/main/webapp"
 then
     echo '* Copying src/main/webapp/ -> docs/'
     rm -rf docs/
