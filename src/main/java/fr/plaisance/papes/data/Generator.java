@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
-public class DataGenerator {
+public class Generator {
 
     @Autowired
     private PapesService service;
@@ -39,6 +39,7 @@ public class DataGenerator {
         this.generatePlusLongsRegnes();
         this.generatePlusCourtsRegnes();
         this.generatePapeParNationalite();
+        this.generatePapeParNomDeRegne();
     }
 
     private void generatePlusLongsRegnes() throws IOException {
@@ -78,5 +79,15 @@ public class DataGenerator {
 
     private Item itemForNationnalite(Map.Entry<String, Long> entry) {
         return Item.of(entry.getValue() < 5 ? "Autre" : entry.getKey(), entry.getValue());
+    }
+
+    private void generatePapeParNomDeRegne() throws IOException {
+        List<Item> items = Itemizer.itemize(service.papesParNomDeRegne(papes), this::itemForNomDeRegne);
+        String json = mapper.writeValueAsString(items);
+        Files.write(Paths.get("src/main/webapp/data/papes-par-nom-de-regne.json"), json.getBytes());
+    }
+
+    private Item itemForNomDeRegne(Map.Entry<String, Long> entry) {
+        return Item.of(entry.getKey(), entry.getValue());
     }
 }

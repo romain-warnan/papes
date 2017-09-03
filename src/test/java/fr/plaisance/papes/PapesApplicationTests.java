@@ -1,6 +1,6 @@
 package fr.plaisance.papes;
 
-import fr.plaisance.papes.data.DataGenerator;
+import fr.plaisance.papes.data.Generator;
 import fr.plaisance.papes.model.Pape;
 import fr.plaisance.papes.service.PapesLoader;
 import fr.plaisance.papes.service.PapesService;
@@ -26,7 +26,7 @@ public class PapesApplicationTests {
 	private PapesService service;
 
 	@Autowired
-	private DataGenerator generator;
+	private Generator generator;
 
 	private List<Pape> papes;
 

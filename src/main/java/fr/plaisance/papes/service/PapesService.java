@@ -22,6 +22,16 @@ public class PapesService {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
     }
 
+    public Map<String, Long> papesParNomDeRegne(Collection<Pape> papes) {
+        return papes.stream()
+                .collect(Collectors.groupingBy(Pape::getNom, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .filter(entry -> entry.getValue() > 4)
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
+    }
+
     public Map<Pape, Long> plusCourtsPontificats(Collection<Pape> papes) {
         return papes.stream()
                 .sorted(Comparator.comparingLong(Papes::dureeRegne))
