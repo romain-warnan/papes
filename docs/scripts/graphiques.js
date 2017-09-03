@@ -3,6 +3,7 @@ import papesParNationalite from './papes-par-nationalite'
 import plusCourtsRegnes from './plus-courts-regnes'
 import plusLongsRegnes from './plus-longs-regnes'
 import papesParNomDeRegne from './papes-par-nom-de-regne'
+import papesParSiecle from './papes-par-siecle'
 
 const graphiques = {
     papesParSaintete: papesParSaintete,
@@ -10,6 +11,7 @@ const graphiques = {
     plusLongsRegnes: plusLongsRegnes,
     papesParNationalite: papesParNationalite,
     papesParNomDeRegne: papesParNomDeRegne,
+    papesParSiecle: papesParSiecle,
 }
 
 export default graphiques
