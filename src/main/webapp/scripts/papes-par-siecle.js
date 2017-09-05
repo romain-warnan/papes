@@ -1,4 +1,5 @@
 import c3 from 'c3'
+import _ from 'lodash'
 
 const load = () => fetch('data/papes-par-siecle.json')
     .then(response => response.json())
@@ -7,10 +8,10 @@ const load = () => fetch('data/papes-par-siecle.json')
 const draw = (json) => {
 
     const labels = json.map(item => item.label)
-    console.log(labels)
 
     const rows = json.map(item => item.value)
     rows.unshift(labels)
+    rows[1] = _.assign(_.fill(new Array(21), 0), rows[1])
     console.log(rows)
 
     c3.generate({
@@ -18,19 +19,19 @@ const draw = (json) => {
         data: {
             type: 'bar',
             rows: rows,
+            groups: [
+                labels,
+            ],
         },
         legend: {
-            hide: 'values',
+            hide: true,
         },
         axis: {
             x: {
                 type: 'category',
-                categories: labels
+                categories: labels,
             }
         },
-        groups: [
-            labels,
-        ]
     });
 }
 
