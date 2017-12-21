@@ -9,3 +9,7 @@ node_modules/
 
 mvnw
 mvnw.cmd
+
+.classpath
+.project
+.settings/
